@@ -300,7 +300,7 @@ class rowSensor(object):
 		self.sensorName = Light(self.api,self.entity,cls=self.btn_cls,width=(self.sensorName_width-stateWidth),height=20)
 		self.widget.add(self.iconButton,0,0)
 		self.widget.add(self.sensorName,36,0)
-		print("Width state = {}".format(str(self.state._value.style.width)))
+		print(("Width state = {}".format(str(self.state._value.style.width))))
 		self.widget.add(self.state,self.width-stateWidth,0)
 		return self.widget
 

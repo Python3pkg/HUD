@@ -59,7 +59,7 @@ def main():
 	log.info("Startup: Load config")
 	config = configparser.ConfigParser()
 	config.read(args.config.name)
-	print(config.sections())
+	print((config.sections()))
 	try:
 		haconfig = {
 			"host" : (args.homeassistant if args.homeassistant else config["HomeAssistant"]["Host"]),
